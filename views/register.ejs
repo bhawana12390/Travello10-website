@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+
+<div class="user-dash">
+    <form action="/register" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="UserName">
+        </div>
+        <div>
+            <label for="Phone">Phone no.</label>
+            <input type="text" name="Phone">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="Email">
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="Password">
+        </div>
+        <div>
+          <label for="favplaces">Fav Places</label>
+          <input type="text" name="FavPlaces">
+        </div>
+        <button type="submit">Register</button>
+      </form>
+</div>
+<%- include('partials/footer.ejs') %>
